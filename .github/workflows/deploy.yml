@@ -19,7 +19,7 @@ jobs:
       - name: Set up LaTeX
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: gglick-resume.tex #can change to your name here.
+          root_file: divine-waters.tex #can change to your name here.
           compiler: xelatex
           args: -output-directory=output  # Specify output directory
           
