@@ -13,7 +13,7 @@ permissions:
 jobs:
   personalize:
     name: Personalize fork with user handle
-    if: github.repository_owner != 'hanisntsolo'
+    if: github.repository_owner != 'divine-waters'
     runs-on: ubuntu-22.04
 
     steps:
@@ -27,16 +27,16 @@ jobs:
 
       - name: Replace handle placeholders in file contents
         run: |
-          echo "Replacing 'hanisntsolo' with '${GITHUB_HANDLE}' in file contents"
-          grep -rl --exclude-dir=".git" --exclude="*.pdf" 'hanisntsolo' . | while read -r file; do
-            sed -i "s/hanisntsolo/${GITHUB_HANDLE}/g" "$file"
+          echo "Replacing 'divine-waters' with '${GITHUB_HANDLE}' in file contents"
+          grep -rl --exclude-dir=".git" --exclude="*.pdf" 'divine-waters' . | while read -r file; do
+            sed -i "s/divine-waters/${GITHUB_HANDLE}/g" "$file"
           done
 
       - name: Rename files and folders with handle
         run: |
-          echo "Renaming all files and folders containing 'hanisntsolo' to '${GITHUB_HANDLE}'"
-          find . -depth -name "*hanisntsolo*" | while read -r path; do
-            new_path=$(echo "$path" | sed "s/hanisntsolo/${GITHUB_HANDLE}/g")
+          echo "Renaming all files and folders containing 'divine-waters' to '${GITHUB_HANDLE}'"
+          find . -depth -name "*divine-waters*" | while read -r path; do
+            new_path=$(echo "$path" | sed "s/divine-waters/${GITHUB_HANDLE}/g")
             if [ "$path" != "$new_path" ]; then
               echo "Renaming $path -> $new_path"
               mv "$path" "$new_path"

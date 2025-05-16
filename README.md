@@ -1,6 +1,6 @@
-[![First-Time Setup Hanisntsolo](https://github.com/hanisntsolo/resume/actions/workflows/first-time-setup-hanisntsolo.yml/badge.svg?branch=hanisntsolo)](https://github.com/hanisntsolo/resume/actions/workflows/first-time-setup-hanisntsolo.yml)
-[![Compile LaTeX document for Hanisntsolo](https://github.com/hanisntsolo/resume/actions/workflows/compile-latex-hanisntsolo.yml/badge.svg?branch=hanisntsolo)](https://github.com/hanisntsolo/resume/actions/workflows/compile-latex-hanisntsolo.yml)
-[![Compile LaTeX document](https://github.com/hanisntsolo/resume/actions/workflows/compile-latex.yml/badge.svg?branch=master)](https://github.com/hanisntsolo/resume/actions/workflows/compile-latex.yml) [![pages-build-deployment](https://github.com/hanisntsolo/resume/actions/workflows/pages/pages-build-deployment/badge.svg?branch=master)](https://github.com/hanisntsolo/resume/actions/workflows/pages/pages-build-deployment)
+[![First-Time Setup divine-waters](https://github.com/divine-waters/resume/actions/workflows/first-time-setup-divine-waters.yml/badge.svg?branch=divine-waters)](https://github.com/divine-waters/resume/actions/workflows/first-time-setup-divine-waters.yml)
+[![Compile LaTeX document for divine-waters](https://github.com/divine-waters/resume/actions/workflows/compile-latex-divine-waters.yml/badge.svg?branch=divine-waters)](https://github.com/divine-waters/resume/actions/workflows/compile-latex-divine-waters.yml)
+[![Compile LaTeX document](https://github.com/divine-waters/resume/actions/workflows/compile-latex.yml/badge.svg?branch=master)](https://github.com/divine-waters/resume/actions/workflows/compile-latex.yml) [![pages-build-deployment](https://github.com/divine-waters/resume/actions/workflows/pages/pages-build-deployment/badge.svg?branch=master)](https://github.com/divine-waters/resume/actions/workflows/pages/pages-build-deployment)
 # The Resume Project
 
 This repository contains the LaTeX source files for my resume and is set up to automatically compile and deploy the resume to GitHub Pages using GitHub Actions.
@@ -12,7 +12,7 @@ This repository contains the LaTeX source files for my resume and is set up to a
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/hanisntsolo/resume.git
+git clone https://github.com/divine-waters/resume.git
 cd resume
 ```
 
@@ -68,12 +68,12 @@ Go to the repository settings on GitHub and navigate to "Settings" > "Pages". En
 Ensure the compiled PDF is located at:
 
 ```
-https://hanisntsolo.github.io/resume/dhirendra-pratap-singh-resume.pdf
+https://divine-waters.github.io/resume/dhirendra-pratap-singh-resume.pdf
 ```
 
 ### 5. Create a Redirect `index.html`
 
-Create an `index.html` file to redirect from `https://hanisntsolo.github.io/resume` to the PDF file.
+Create an `index.html` file to redirect from `https://divine-waters.github.io/resume` to the PDF file.
 
 ```bash
 # Ensure you are on the gh-pages branch
@@ -104,8 +104,8 @@ git push origin gh-pages
 
 ### Access the PDF
 
-- **Direct PDF URL:** `https://hanisntsolo.github.io/resume/dhirendra-pratap-singh-resume.pdf`
-- **Redirect URL:** `https://hanisntsolo.github.io/resume`
+- **Direct PDF URL:** `https://divine-waters.github.io/resume/dhirendra-pratap-singh-resume.pdf`
+- **Redirect URL:** `https://divine-waters.github.io/resume`
 
 ### Clearing Browser Cache
 

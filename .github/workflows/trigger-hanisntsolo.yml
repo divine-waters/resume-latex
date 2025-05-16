@@ -1,5 +1,5 @@
-# .github/workflows/trigger-hanisntsolo.yml
-name: trigger-hanisntsolo-flow
+# .github/workflows/trigger-divine-waters.yml
+name: trigger-divine-waters-flow
 
 on:
   schedule:
@@ -10,10 +10,10 @@ jobs:
   trigger:
     runs-on: ubuntu-latest
     steps:
-      - name: Call dispatch on hanisntsolo branch
+      - name: Call dispatch on divine-waters branch
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.WORKFLOW_TOKEN }}  # PAT with repo + workflow scopes
           repository: ${{ github.repository }}
-          event-type: trigger-hanisntsolo
-          client-payload: '{"ref": "hanisntsolo"}'
+          event-type: trigger-divine-waters
+          client-payload: '{"ref": "divine-waters"}'
